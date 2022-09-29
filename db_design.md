@@ -77,33 +77,28 @@
  
  > db.createCollection('codekata');
 
-    db.codekata.insertMany([
-        {
-            codekata_id :1,
-            category: "Input/Output",
-            problems: 10,
-        },
-        {
-            codekata_id :2,
-            category: "Absolute Beginner",
+     db.codekata.insertMany([
+         {
+            userid: 1,
+            problems: 70,
+         },
+         {
+            userid: 2,
+            problems: 50,
+         },
+         {
+            userid: 3,
             problems: 30,
-        },
-        {
-            codekata_id :3,
-            category: "Array",
-            problems: 300,
-        },
-        {
-            codekata_id :4,
-            category: "Strings",
-            problems: 200,
-        },
-        {
-            codekata_id :5,
-            category: "Basics",
+         },
+         {
+            userid: 4,
             problems: 40,
-        }
-    ]);
+         },
+         {
+            userid: 5,
+            problems: 40,
+         },
+       ]);
 
 
 **4. Topics Collection creation and Data Insert:**
@@ -114,27 +109,27 @@
         {
             topicid: 1,
             topic: "html",
-            topic_date: new Date("1-sep-2022"),
+            topic_date: new Date("1-oct-2022"),
         },
         {
             topicid: 2,
             topic: "css",
-            topic_date: new Date("5-sep-2022"),
+            topic_date: new Date("5-oct-2022"),
         },
         {
             topicid: 3,
             topic: "Javascript",
-            topic_date: new Date("10-sep-2022"),
+            topic_date: new Date("10-oct-2022"),
         },
         {
             topicid: 4,
             topic: "React",
-            topic_date: new Date("20-sep-2022"),
+            topic_date: new Date("20-oct-2022"),
         },
         {
             topicid: 5,
             topic: "NodeJs",
-            topic_date: new Date("30-sep-2022"),
+            topic_date: new Date("30-oct-2022"),
         },
     ]);
 
@@ -149,7 +144,7 @@
             topicid: 1,
             userid: 1,
             task: "html task",
-            due_date: new Date("4-oct-2021"),
+            due_date: new Date("4-nov-2022"),
             submitted: true,
         },
         {
@@ -157,7 +152,7 @@
             topicid: 2,
             userid: 2,
             task: "css task",
-            due_date: new Date("10-oct-2021"),
+            due_date: new Date("10-nov-2022"),
             submitted: true,
         },
         {
@@ -165,7 +160,7 @@
             topicid: 3,
             userid: 3,
             task: "Javascript task",
-            due_date: new Date("15-oct-2021"),
+            due_date: new Date("15-nov-2022"),
             submitted: false,
         },
         {
@@ -173,7 +168,7 @@
             topicid: 4,
             userid: 4,
             task: "React task",
-            due_date: new Date("20-oct-2021"),
+            due_date: new Date("20-nov-2022"),
             submitted: false,
         },
         {
@@ -181,7 +176,7 @@
             topicid: 5,
             userid: 5,
             task: "Node task",
-            due_date: new Date("25-oct-2021"),
+            due_date: new Date("25-nov-2022"),
             submitted: false,
         },
     ]);
@@ -227,31 +222,31 @@
     db.companydrives.insertMany([
         {
             userid: 1,
-            drive_date: new Date("10-nov-2022"),
+            drive_date: new Date("10-dec-2022"),
             company: "Google",
             selection: false,
         },
         {
             userid: 1,
-            drive_date: new Date("15-nov-2022"),
+            drive_date: new Date("15-dec-2022"),
             company: "Amazon",
             selection: false,
         },
         {
             userid: 2,
-            drive_date: new Date("20-nov-2022"),
+            drive_date: new Date("20-dec-2022"),
             company: "Google",
             selection: true,
         },
         {
             userid: 3,
-            drive_date: new Date("25-nov-2022"),
+            drive_date: new Date("25-dec-2022"),
             company: "TCS",
             selection: true,
         },
         {
             userid: 4,
-            drive_date: new Date("27-nov-2022"),
+            drive_date: new Date("27-dec-2022"),
             company: "Wipro",
             selection: true,
         },
